@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 3em;
+    overflow: auto;
+}
+
+/* This is for navigation */
+nav{
+    max-height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+nav *{
+    margin: auto 0;
+}
+
+nav img{
+    margin-right: auto;
+    object-fit: scale-down;
+}
+nav span{
+    margin-right: 2em;
+    padding: 1em;
+    align-self: center;
+}
+
+nav span:nth-child(5){
+    margin-right: auto;
+}
+
+nav a{
+    padding: 1em;
+    outline: 1px solid #5E3BEE;
+    align-self: flex-end;
+}
+/*---------------------------------------------------*/
+
+
+/* This is for header */
+header{
+    width: 100%;
+    height: 50em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #text-section{
+    width: 40%;
+}
+
+/*----------------------------------------------------*/
