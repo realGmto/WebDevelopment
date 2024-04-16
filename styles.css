@@ -73,25 +73,25 @@ header .text-section{
 }
 
 header h1{
-    font-size: 68px;
+    font-size: 65px;
     margin-bottom: 0.3em;
     margin-top: 0.5em;
     color: #282938;
 }
 
 header h4{
-    font-size: 21px;
+    font-size: 20px;
     color: #282938;
 }
 
 header h3{
-    font-size: 24px;
+    font-size: 23px;
     margin-bottom: 4em;
     color: #1C1E53;
 }
 
 header a{
-    font-size: 21px;
+    font-size: 20px;
     border-radius: 10px;
     text-decoration: none;
     padding: 1em;
@@ -118,6 +118,7 @@ header img{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -154,13 +155,137 @@ header img{
     font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+.title p{
+    font-size: 24px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1350px) {
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 975px) {
+    #Skills .title{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+}
+
+
+/*----------------------------------------------------*/
+
+
+/* This is for About Me section */
+#About-Me{
+    padding: 5em 4em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#About-Me img{
+    max-width: 40em;
+    margin: 3em;
+}
+
+#About-Me .title{
+    max-width: 40%;
+}
+
+@media only screen and (max-width: 1350px) {
+    #About-Me{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #About-Me .title h1{
+        font-size: 43px;
+    }
+    
+    #About-Me .title h4{
+        font-size: 14px;
+    }
+    
+    #About-Me .title p{
+        font-size: 16px;
+    }
+}
+
+/*----------------------------------------------------*/
+
+
+/* This is for Portfolio section */
+
+#Portfolio{
+    padding: 5em 4em;
+}
+
+#nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-container .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E62872;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 0px 1.33px 2.67px 0px #1018280D;
+}
+
+#nav-container .button span{
+    font-size: 21px;
+}
+
+#nav-container .button img{
+    padding: 0.5em;
+}
+
+#nav-container a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#ProjectCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ProjectCards .card{
+    box-shadow: 0px 0px 32px 0px #00000026;
+}
+
+#ProjectCards .card img{
+    border-radius: 5px;
+}
+
+#ProjectCards .card .text-section{
+    max-width: 556px;
+    padding: 3em;
+    padding-top: 0;
+}
+
+#ProjectCards .card .text-section a{
+    color: #000000;
+    font-size: 19px;
+    text-decoration-color: #5E3BEE;
+}
+
+
+#ProjectCards .card .text-section h1{
+    font-size: 32px;
+}
+
+#ProjectCards .card .text-section p{
+    font-size: 21px;
 }
 
 /*----------------------------------------------------*/
