@@ -1,3 +1,4 @@
+/* This is for globally set*/
 *{
     box-sizing: border-box;
 }
@@ -7,6 +8,27 @@ body{
     margin: 0;
 }
 
+section,footer{
+    padding: 8em 4em;
+}
+
+.title h1{
+    font-size: 64px;
+    margin-top: 0.3em;
+}
+
+.title h4{
+    font-size: 20px;
+}
+
+.title p{
+    font-size: 24px;
+}
+
+
+/*---------------------------------------------------*/
+
+
 /* This is for navigation */
 nav{
     max-height: 120px;
@@ -14,7 +36,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 1em 3em;
+    margin: 1em 4em;
 }
 
 nav *{
@@ -27,7 +49,6 @@ nav img{
 }
 nav span{
     margin-right: 2em;
-    padding: 1em;
     align-self: center;
 }
 
@@ -36,10 +57,16 @@ nav span:nth-child(5){
 }
 
 nav a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1em;
+    color: #1C1E53;
+}
+
+#nav-button{
     padding: 1em;
     outline: 1px solid #5E3BEE;
     align-self: flex-end;
-    text-decoration: none;
     border-radius: 5px;
 }
 /*---------------------------------------------------*/
@@ -53,7 +80,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5em 0;
+    padding: 8em 0;
     padding-left: 3em;
     padding-right: 4em;
     flex-wrap: wrap;
@@ -111,7 +138,8 @@ header img{
 /* This is for Skills section */
 
 #Skills{
-    padding: 5em 4em;
+    padding-top: 8em;
+    padding-bottom: 8em;
 }
 
 #skillBoxes{
@@ -128,6 +156,7 @@ header img{
     border-radius: 10px;
     padding: 2em;
     margin: 1em;
+    box-shadow: rgb(100,100,111,0.2) 0px 7px 29px 0px
 }
 
 .skillBox:first-child{
@@ -144,19 +173,6 @@ header img{
     background-color: #FFFFFF;
     padding: 1em;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px
-}
-
-.title h1{
-    font-size: 64px;
-    margin-top: 0.3em;
-}
-
-.title h4{
-    font-size: 20px;
-}
-
-.title p{
-    font-size: 24px;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -177,7 +193,6 @@ header img{
 
 /* This is for About Me section */
 #About-Me{
-    padding: 5em 4em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -218,15 +233,12 @@ header img{
 
 /* This is for Portfolio section */
 
-#Portfolio{
-    padding: 5em 4em;
-}
-
 #nav-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5em;
 }
 
 #nav-container .button{
@@ -287,5 +299,178 @@ header img{
 #ProjectCards .card .text-section p{
     font-size: 21px;
 }
+
+/*----------------------------------------------------*/
+
+
+/* This is for testimonials section*/
+#Testimonials{
+    background-color: #F5FCFF;
+    padding-bottom: 10em;
+}
+
+#Testimonials .title{
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+.TestimonialsCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TestimonialsCards .card{
+    padding: 3em;
+    outline: 1.33px solid #006B6A;
+    border-radius: 10px;
+    max-width: 33em;
+    margin: 1em;
+}
+
+.TestimonialsCards .stars{
+    display: flex;
+}
+
+.TestimonialsCards .stars img{
+    padding: 0.2em;
+}
+
+.TestimonialsCards .card p{
+    color: #1C1E53;
+    font-size: 21px;
+    margin: 2em 0;
+}
+
+.TestimonialsCards .card .avatar{
+    display: flex;
+}
+
+.TestimonialsCards .card .avatar .content{
+    padding-left: 2em;
+}
+
+.TestimonialsCards .card .avatar .content h4{
+    color: #282938;
+    font-size: 21px;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.TestimonialsCards .card .avatar .content h5{
+    color: #1C1E53;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/*----------------------------------------------------*/
+
+
+/* This is for Contact Me section */
+#Contact{
+    text-align: center;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+#Contact .title{
+    padding: 2em 0;
+}
+
+#Contact .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+#Contact form .input{
+    text-align: start;
+    width: 100%;
+    padding: 16px;
+    margin: 2em 0;
+}
+
+#Contact form .inputs .input{
+    width: 50%;
+    margin: 0;
+}
+
+#Contact form input,select,textarea{
+    border-radius: 8px;
+    outline: none;
+    border: 1.33px solid #5E3BEE;
+    height: 64px;
+    padding: 16px;
+    margin-top: 1em;
+    width: 100%;
+    font-size: 21px;
+    color: #282938;
+}
+
+#Contact form label{
+    color: #282938;
+    font-size: 21px;
+    width: 100%;
+}
+
+#Contact form button{
+    padding: 1em 2em;
+    background-color: #5E3BEE;
+    border-radius: 8px;
+    outline: none;
+    border: 1px #5E3BEE;
+    color: white;
+    font-size: 21px;
+}
+
+
+@media screen and (max-width: 1200px){
+    #Contact form .input{
+        width: 100%;
+    }
+    
+}
+/*----------------------------------------------------*/
+
+/* This if for Footer*/
+
+footer{
+    padding-bottom: 3em;
+}
+
+footer nav{
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+footer #credits{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3em;
+    border-top: 1.33px solid #2829388C;
+}
+
+nav .nav-buttons{
+    align-self: flex-end;
+}
+footer #credits span{
+    font-size: 18px;
+    color: black;
+}
+
+footer #credits .nav-buttons a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 2em;
+}
+
+
 
 /*----------------------------------------------------*/

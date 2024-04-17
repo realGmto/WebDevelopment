@@ -13,13 +13,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
+        <nav id="Home">
             <img loading="lazy" src="images/Navbar/Logo.png">
-            <span class="roboto-regular">Home</span>
-            <span class="roboto-regular">Portfolio</span>
-            <span class="roboto-regular">About me</span>
-            <span class="roboto-regular">Testimonials</span>
-            <a class="roboto-regular" href="">Contact Me</a>
+            <span class="roboto-regular"><a href="#Home">Home</a></span>
+            <span class="roboto-regular"><a href="#Portfolio">Portfolio</a></span>
+            <span class="roboto-regular"><a href="#About-Me">About me</a></span>
+            <span class="roboto-regular"><a href="#Testimonials">Testimonials</a></span>
+            <a id="nav-button" class="roboto-regular" href="#Contact">Contact Me</a>
         </nav>
 
         <header>
@@ -27,7 +27,7 @@
                 <h4 class="roboto-medium"><strong>Hey, I am Josh</strong></h4>
                 <h1 class="roboto-bold"><strong>I create <span style="color:#5E3BEE">product design</span> and brand experiences</strong></h1>
                 <h3 class="roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h3>
-                <a class="roboto-regular" href="">Get in Touch</a>
+                <a class="roboto-regular" href="#Contact">Get in Touch</a>
             </div>
             <img loading="lazy" src="images/Header/Header_1.png">
         </header>
@@ -131,6 +131,141 @@
             </div>
         </section>
 
+        <section id="Testimonials">
+            <div class = "title">
+                <h4 class="roboto-medium"><strong>Clients Feedback</strong></h4>
+                <h1 class="roboto-bold"><strong>Customer testimonials</strong></h1>
+            </div>
+            <div class="TestimonialsCards">
+                <div class="card">
+                    <div class="stars">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                    <div class="avatar">
+                        <img loading="lazy" src="images/Testimonials/Avatar Image.svg">
+                        <div class="content">
+                            <h4 class="roboto-medium">Dianne Russell</h4>
+                            <h5 class="roboto-regular">Starbucks</h5>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="stars">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                    <div class="avatar">
+                        <img loading="lazy" src="images/Testimonials/Avatar Image 2.svg">
+                        <div class="content">
+                            <h4 class="roboto-medium">Kristin Watson</h4>
+                            <h5 class="roboto-regular">Louis Vuitton</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                        <img loading="lazy" src="images/Testimonials/Star.svg">
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                    <div class="avatar">
+                        <img loading="lazy" src="images/Testimonials/Avatar Image 3.svg">
+                        <div class="content">
+                            <h4 class="roboto-medium">Kathryn Murphy</h4>
+                            <h5 class="roboto-regular">McDonald's</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class = "title">
+                <h4 class="roboto-medium"><strong>Clients Feedback</strong></h4>
+                <h1 class="roboto-bold" style="color: #282938;"><strong>Customer testimonials</strong></h1>
+                <p style="color: #1C1E53;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <form method="post">
+                <div class="inputs">
+                    <div class="input">
+                        <label class="roboto-regular" for="fname" required>First name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    </div>
+
+                    <div class="input">
+                        <label class="roboto-regular" for="lname" required>Last name</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <div class="input">
+                        <label class="roboto-regular" for="email" required>Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </div>
+
+                    <div class="input">
+                        <label class="roboto-regular" for="phone" required>Phone number</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="385 98 123 4567" pattern="[0-9]{3} [0-9]{2} [0-9]{3} [0-9]{4}" maxlength="15">
+                    </div>
+                </div>
+                <div class="input">
+                    <label class="roboto-regular" for="topic" required>Choose a topic</label><br>
+                    <select id="topic" name="topic">
+                        <option value="">Select a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Costumer Support</option>
+                        <option value="billing">Billing Inquiry</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label class="roboto-regular" for="message" required>Message</label><br>
+                    <textarea id="message" name="message" style="height: 240px;" rows="10" placeholder="Type your message..."></textarea><br>
+                </div>
+                <div class="input">
+                    <input style="width: 21px; height: 21px; margin: 0;" type="checkbox" id="terms" name="terms" value="true" >
+                    <label class="roboto-regular" for="terms" required>I accept the terms</label><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <nav>
+                <img loading="lazy" src="images/Navbar/Logo.png">
+                <span class="roboto-regular"><a href="#Home">Home</a></span>
+                <span class="roboto-regular"><a href="#Portfolio">Portfolio</a></span>
+                <span class="roboto-regular"><a href="#About-Me">About me</a></span>
+                <span class="roboto-regular"><a href="#Testimonials">Testimonials</a></span>
+                <div class="nav-buttons">
+                    <a class="nav-button" href="https://www.facebook.com/nikolanikidgo.muzenjak/"><img loading="lazy" src="images/Footer/Facebook.svg"></a>
+                    <a class="nav-button" href="https://www.instagram.com/nikolanikidgo/"><img loading="lazy" src="images/Footer/Instagram.svg"></a>
+                    <a class="nav-button" href="https://twitter.com"><img loading="lazy" src="images/Footer/X.svg"></a>
+                    <a class="nav-button" href="https://www.linkedin.com/in/nikola-mu%C5%BEenjak-144116274/"><img loading="lazy" src="images/Footer/LinkedIn.svg"></a>
+                </div>
+            </nav>
+            <div id="credits">
+                <span class="roboto-regular">Made with 💖 by Airdokan</span>
+                <div class="nav-buttons">
+                    <a class="roboto-regular" href="">Privacy Policy</a>
+                    <a class="roboto-regular" href="">Terms of Service</a>
+                    <a class="roboto-regular" href="">Cookies Settings</a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
